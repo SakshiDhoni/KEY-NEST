@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:frontend/presentation/email_auth.dart';
-import 'package:frontend/presentation/home_page.dart';
-import 'package:frontend/presentation/phone_auth.dart';
 import 'package:frontend/presentation/welcome_page.dart';
+import 'package:frontend/presentation/welcomePage2.dart';
 
 
 // If you used `flutterfire configure`, import your generated firebase_options.dart here instead:
@@ -36,9 +34,6 @@ class MyApp extends StatelessWidget {
       // Define routes for navigation
       routes: {
         '/' : (context) => const WelcomeScreen(),
-        '/home': (context) => const HomePage(),
-        '/email': (context) => const EmailAuthPage(),
-        '/phone': (context) => const PhoneAuthPage(),
       },
       initialRoute: '/',
     );
