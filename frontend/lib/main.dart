@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:frontend/presentation/welcome_page.dart';
-import 'package:frontend/presentation/welcomePage2.dart';
-
+import 'new_pages/welcome_page.dart';
+import 'new_pages/contractor_property_form.dart';
+import 'new_pages/contractor_car_form.dart';
+import 'new_pages/customer_dashboard.dart';
 
 // If you used `flutterfire configure`, import your generated firebase_options.dart here instead:
 // import 'firebase_options.dart';
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Broker Auth Demo',
       theme: ThemeData(primarySwatch: Colors.blue),
+      debugShowCheckedModeBanner: false,
       // Define routes for navigation
       routes: {
         '/' : (context) => const WelcomeScreen(),
